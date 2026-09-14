@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto Drive</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #0c0f14; overflow: hidden; }
+    #app { position: fixed; inset: 0; }
+    canvas { display: block; }
+    #ad-fade { position: fixed; inset: 0; background: #000; z-index: 20;
+      pointer-events: none; opacity: 0; transition: opacity 1.2s ease; }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <div id="ad-fade"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
